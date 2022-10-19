@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {TrabajosService} from "../../servicios/trabajos.service";
+import {Tabla} from "../../modelo/tabla";
 
 @Component({
   selector: 'app-trabajos',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrabajosComponent implements OnInit {
 
-  constructor() { }
+  tabla: Tabla | undefined;
+
+  constructor( private trabajosService: TrabajosService ) { }
 
   ngOnInit(): void {
+    this.trabajosService.obtenerTrabajos().subscribe(
+      data => this.tabla = data,
+      error => console.log(error),
+      () => console.log('FIN')
+    )
   }
 
 }

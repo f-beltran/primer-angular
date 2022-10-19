@@ -1,31 +1,12 @@
-<table>
+<table *ngIf="datos">
   <thead>
     <tr>
-      <th>Columna 1</th>
-      <th>Columna 2</th>
-      <th>Columna 3</th>
+      <th *ngFor="let encabezado of datos.encabezado">{{encabezado}}</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Dato</td>
-      <td>Dato</td>
-      <td>Dato</td>
-    </tr>
-    <tr>
-      <td>Dato</td>
-      <td>Dato</td>
-      <td>Dato</td>
-    </tr>
-    <tr>
-      <td>Dato</td>
-      <td>Dato</td>
-      <td>Dato</td>
-    </tr>
-    <tr>
-      <td>Dato</td>
-      <td>Dato</td>
-      <td>Dato</td>
+    <tr *ngFor="let fila of datos.cuerpo">
+      <td *ngFor="let dato of fila">{{dato}}</td>
     </tr>
   </tbody>
 </table>

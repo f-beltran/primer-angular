@@ -1,0 +1,10 @@
+{
+  "encabezado": ["id", "Producto", "descripcion"],
+  "cuerpo": [
+    ["1", "Desarrollo web", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis."],
+    ["2", "Desarrollo movil", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis."],
+    ["3", "Desarrollo de ux/ui", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis."],
+    ["4", "Acesoria TI", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis."]
+
+  ]
+}

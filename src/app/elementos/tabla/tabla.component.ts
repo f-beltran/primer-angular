@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Tabla} from "../../modelo/tabla";
 
 @Component({
   selector: 'app-tabla',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabla.component.scss']
 })
 export class TablaComponent implements OnInit {
-
+  @Input() datos: Tabla | undefined;
   constructor() { }
 
   ngOnInit(): void {

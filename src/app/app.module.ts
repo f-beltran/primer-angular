@@ -9,6 +9,7 @@ import { TrabajosComponent } from './paginas/trabajos/trabajos.component';
 import { EquipoComponent } from './paginas/equipo/equipo.component';
 import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagina-no-encontrada.component';
 import { TablaComponent } from './elementos/tabla/tabla.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TablaComponent } from './elementos/tabla/tabla.component';
   exports: [],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
