@@ -1,0 +1,15 @@
+div{
+  display: flex;
+  flex-direction: column;
+  .detalle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img{
+      flex: 1 1 0%;
+    }
+    p{
+      flex: 5 1 0%;
+    }
+  }
+}

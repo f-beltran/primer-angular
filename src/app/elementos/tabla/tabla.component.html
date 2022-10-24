@@ -5,7 +5,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let fila of datos.cuerpo">
+    <tr *ngFor="let fila of datos.cuerpo" (click)="enviarId(fila)" >
       <td *ngFor="let dato of fila">{{dato}}</td>
     </tr>
   </tbody>

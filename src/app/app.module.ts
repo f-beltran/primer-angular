@@ -10,6 +10,7 @@ import { EquipoComponent } from './paginas/equipo/equipo.component';
 import { PaginaNoEncontradaComponent } from './paginas/pagina-no-encontrada/pagina-no-encontrada.component';
 import { TablaComponent } from './elementos/tabla/tabla.component';
 import {HttpClientModule} from "@angular/common/http";
+import { ServicioDetalleComponent } from './paginas/servicio-detalle/servicio-detalle.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {HttpClientModule} from "@angular/common/http";
     TrabajosComponent,
     EquipoComponent,
     PaginaNoEncontradaComponent,
-    TablaComponent
+    TablaComponent,
+    ServicioDetalleComponent
   ],
   exports: [],
   imports: [
